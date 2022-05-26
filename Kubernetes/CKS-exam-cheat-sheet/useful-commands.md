@@ -3,5 +3,5 @@
 
 |Command|Description|
 |------|-----------|
-|`kubectl certificate approve <csr-request-name>`| Approve the CSR request.|
+|`kubectl certificate <attribute> <csr-request-name>`| attribute: approve or deny, the CSR request.|
 |`<command>`|description|
