@@ -16,7 +16,15 @@
 |`kubectl api-resources --namespaced=<flag>`| List API Resources with namespace scope, where flag=true or false|
 |`kubectl get <resource> --as <username>`| Get the details of a given Kubernetes Resource as a specific user|
 |`ps -aux \| grep kubelet`| Get the details of a running process|
+|`sha512sum <package-file-name>`| Generate checksum for platform binaries for verification before deploying, on linux|
+|`kubectl drain <node-name>`| Move workloads to other worker nodes for upgrade activities or debugging purpose|
+|`kubectl uncordon <node-name>`| Allow workloads again after upgrade activities|
 
+## Cluster Upgrade
+
+|Command|Description|
+|------|-----------|
+|`/var/lib/kubelet/kubelet-config.yaml`| Default location for Configurable Kubelet Options|
 
 ## CKS Usefull Locations
 
@@ -25,3 +33,9 @@
 |------|-----------|
 |`/var/lib/kubelet/kubelet-config.yaml`| Default location for Configurable Kubelet Options|
 |`/usr/local/bin/kubelet`| Default location for a running kubelet service (kubelet.service)|
+
+## Usefull References 
+
+
+K8s Release Notes: 
+https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG
