@@ -19,6 +19,11 @@
 |`sha512sum <package-file-name>`| Generate checksum for platform binaries for verification before deploying, on linux|
 |`kubectl drain <node-name>`| Move workloads to other worker nodes for upgrade activities or debugging purpose|
 |`kubectl uncordon <node-name>`| Allow workloads again after upgrade activities|
+|`systemctl <action> <service>`| action: start / stop / status, service: ex. docker|
+|`dockerd`| other way to start docker daemon|
+|`/etc/passwd`| User details present on any linux system|
+|`/etc/shadow`| Passwords for all the users on linux system|
+|`/etc/group`| User groups available on the linux system|
 
 ## Cluster Upgrade
 
@@ -33,6 +38,7 @@
 |------|-----------|
 |`/var/lib/kubelet/kubelet-config.yaml`| Default location for Configurable Kubelet Options|
 |`/usr/local/bin/kubelet`| Default location for a running kubelet service (kubelet.service)|
+|`/etc/docker/daemon.json`| Docker daemon configuration file ex. hosts, tls certs|
 
 ## Usefull References 
 
